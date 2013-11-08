@@ -4,7 +4,7 @@ utils.less
 This library represnt collections of useful css classes as LESS functions. They are intended 
 to be very easy to use and the only thing you will need to do is:
 
-```less
+```css
 @import 'utils';
 ```
 
