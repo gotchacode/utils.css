@@ -1,0 +1,39 @@
+.thumbnail-circular(@height, @width) {
+  height: @height;
+  width: @width;
+  border-radius: 50%; 
+}
+
+.circle-colored(@size, @color) {
+  height: @size;
+  width: @size;
+  background-color: @color;
+}
+
+//triangles
+
+.bottom-triangle() {
+  content: "";
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  border: 15px solid transparent;
+  border-top-color: #ffffff;
+  margin-left: 35px; //set these as per requirement.
+  margin-top: 65px; // set these as per requirement.
+}
+
+.side-triangle() {
+  .dialog-box-container:before {
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: -10px;
+    top: 30px;
+    content: "";
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #eeeeee;
+  }
+}
+
