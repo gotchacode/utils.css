@@ -35,3 +35,80 @@
     border-left: 20px solid #eeeeee;
   }
 }
+
+.container-padding($width:0px) {
+  padding-left: $width;
+  padding-right: $width;
+}
+
+.green-button($font:24px, $padding:30px) {
+  background-color: $school-green;
+  font-size: $font;
+  font-weight: bold;
+  color: white;
+  padding-left: $padding;
+  padding-right: $padding;
+}
+
+.blue-button() {
+  background-color: $school-blue;
+  color: white;
+  font-weight: bold;
+}
+
+.container-margin($value:30px) {
+  margin-top: $value;
+  margin-bottom: $value;
+}
+
+.circle($diameter, $color) {
+  height: $diameter;
+  width: $diameter;
+  background-color: $color;
+  border-radius: 50%;
+}
+
+.small-circle($color, $radius) {
+  .circle($radius, $color);
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 10px;
+  .point {
+    color: white;
+    font-weight: bold;
+    margin-top: 12px;
+    text-align: center;
+    margin-left: 18px;
+  }
+}
+
+
+.dialog-box($padding, $radius, $width) {
+  padding: $padding;
+  background-color: $gray-lighter;
+  border-radius: $radius;
+  max-width: $width;
+}
+
+.border-radius ($radius: 5px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.container-widget($background: white){
+  background: $background;
+  .box-shadow(0 2px 6px darken($gray-light, 10%));
+
+}
+
+.top-border-radius($radius) {
+  border-top-right-radius: $radius;
+  border-top-left-radius: $radius;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+
