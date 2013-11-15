@@ -1,16 +1,15 @@
-.thumbnail-circular($height, $width) {
-  height: $height;
-  width: $width;
-  border-radius: 50%; 
-}
-
-.circle-colored($size, $color) {
+// Geometrical shapes
+.square($size, $color) {
   height: $size;
   width: $size;
   background-color: $color;
 }
 
-//triangles
+.circle($size, $color) {
+  height: $size;
+  width: $size;
+  border-radius: 50%; 
+}
 
 .bottom-triangle() {
   content: "";
@@ -21,9 +20,10 @@
   border-top-color: #ffffff;
   margin-left: 35px; //set these as per requirement.
   margin-top: 65px; // set these as per requirement.
+}
 
-.side-triangle() {
-  .dialog-box-container:before {
+.right-triangle() {
+  .parent-container:before {
     width: 0;
     height: 0;
     position: absolute;
@@ -41,8 +41,8 @@
   padding-right: $width;
 }
 
-.green-button($font:24px, $padding:30px) {
-  background-color: $school-green;
+.button-color($font:24px, $padding:30px, $color) {
+  background-color: $color;
   font-size: $font;
   font-weight: bold;
   color: white;
@@ -50,30 +50,18 @@
   padding-right: $padding;
 }
 
-.blue-button() {
-  background-color: $school-blue;
-  color: white;
-  font-weight: bold;
-}
-
 .container-margin($value:30px) {
   margin-top: $value;
   margin-bottom: $value;
 }
 
-.circle($diameter, $color) {
-  height: $diameter;
-  width: $diameter;
-  background-color: $color;
-  border-radius: 50%;
-}
-
+//circle with a central texts
 .small-circle($color, $radius) {
   .circle($radius, $color);
   display: inline-block;
   vertical-align: middle;
   margin-bottom: 10px;
-  .point {
+  .point { // class of the text
     color: white;
     font-weight: bold;
     margin-top: 12px;
@@ -111,4 +99,10 @@
   border-bottom-left-radius: 0;
 }
 
+.bottom-border-radius($radius) {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: $radius;
+  border-bottom-left-radius: $radius;
+}
 
