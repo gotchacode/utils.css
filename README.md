@@ -1,13 +1,34 @@
-# Utils.css
+#Utils.css
 
-##What is this?
+##What is UTILS.CSS?
 
-This is a collection of mixins for everyday CSS classes that are handy and important enough to be used as mixins. In accordance with DRY(Don't repeat yourself), i have decided not to write them again and save any mixin i create and also the good ones i come across.
+It is collection of mixins of some peculiar CSS classes that you can use while implementing/drawing peculiar shapes etc. It is under happy development and you will get a lot more goodies in coming time.
 
-In order to use in your LESS or SASS files, just do:
+## USE
+
+In order to use:
+
+For 'LESS', add this in your styles.less file
 
 ```css
-@import 'utils';
+@import utils.less
 ```
 
-Happy hacking!
+For 'SASS', add this in your styles.sass file
+
+```sass
+@import utils.sass
+```
+
+## Contributors:
+
+- Krunal [@krunalrasik](http://github.com/krunalrasik)
+- Vinit [@vinitkumar](http://github.com/vinitkumar)
+
+## How to Contribute:
+
+- By creating issues if you found a bug
+- Fork the repo, fix the issue passing a reference and send a PR. 
+
+
+
