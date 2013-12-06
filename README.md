@@ -2,7 +2,7 @@
 
 ##What is UTILS.CSS?
 
-It is collection of mixins of some peculiar CSS classes that you can use while implementing/drawing peculiar shapes etc. It is under happy development and you will get a lot more goodies in coming time.
+It is collection of mixins of handy CSS classes that you can use while implementing some peculiar shapes etc. It is under heavy development and will have a lot more additions in near future.
 
 ## USE
 
