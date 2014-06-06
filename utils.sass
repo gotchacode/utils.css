@@ -1,3 +1,12 @@
+// mixin border radius 
+.border-radius ($radius: 5px) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+  border-radius: $radius;
+}
+
 // Geometrical shapes
 .square($size, $color) {
   height: $size;
@@ -8,21 +17,21 @@
 .circle($size, $color) {
   height: $size;
   width: $size;
-  border-radius: 50%; 
+  .border-radius(50%); 
 }
 
-.bottom-triangle() {
+.bottom-triangle($color: #fff) {
   content: "";
   height: 0px;
   width: 0px;
   position: absolute;
   border: 15px solid transparent;
-  border-top-color: #ffffff;
+  border-top-color: $color;
   margin-left: 35px; //set these as per requirement.
   margin-top: 65px; // set these as per requirement.
 }
 
-.right-triangle() {
+.right-triangle($color: #eee) {
   .parent-container:before {
     width: 0;
     height: 0;
@@ -32,7 +41,7 @@
     content: "";
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
-    border-left: 20px solid #eeeeee;
+    border-left: 20px solid $color;
   }
 }
 
@@ -56,14 +65,14 @@
 }
 
 //circle with a central texts
-.small-circle($color, $radius) {
+.small-circle($color, $radius, $color-point: #fff) {
   .circle($radius, $color);
   display: inline-block;
   vertical-align: middle;
   margin-bottom: 10px;
   background-color: $color;
   .point { // class of the text
-    color: white;
+    color: $color-point;
     font-weight: bold;
     text-align: center;
     font-size: 24px;
@@ -76,16 +85,8 @@
 .dialog-box($padding, $radius, $width) {
   padding: $padding;
   background-color: $gray-lighter;
-  border-radius: $radius;
+  .border-radius($radius);
   max-width: $width;
-}
-
-.border-radius ($radius: 5px) {
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  -ms-border-radius: $radius;
-  -o-border-radius: $radius;
-  border-radius: $radius;
 }
 
 .container-widget($background: white){
@@ -107,4 +108,3 @@
   border-bottom-right-radius: $radius;
   border-bottom-left-radius: $radius;
 }
-
