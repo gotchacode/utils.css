@@ -24,7 +24,7 @@ For 'SASS', add this in your styles.sass file
 
 - Krunal [@krunalrasik](http://github.com/krunalrasik)
 - Vinit [@vinitkumar](http://github.com/vinitkumar)
-- Angvish[@angvishvish](https://github.com/angvishvish)
+- Angvish [@angvishvish](https://github.com/angvishvish)
 
 ## How to Contribute:
 
